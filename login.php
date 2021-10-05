@@ -45,6 +45,7 @@ if($test > 0){
 
        <input type="submit" class="button" name="dangnhap" value="Đăng nhập"> 
       <a href="dangky.php" title="Đăng ký">Đăng ký</a> 
+      <a href="" title="Quên mật khẩu">Quên mật khẩu</a>
 </form> 
 </div>
 </div>

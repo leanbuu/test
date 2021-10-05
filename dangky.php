@@ -28,6 +28,7 @@ $query = mysqli_query($conn, $sql);
        <input class="tkmk" type="password" name="password"> 
        <input type="submit" class="button" name="dangky" value="Đăng Ký"> 
       <a href="login.php" title="Đăng ký">Đăng Nhập</a> 
+      <a href=""></a>
 </form> 
 </div>
 </div>

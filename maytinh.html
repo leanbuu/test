@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Máy tính</title>
+	<meta charset="utf-8">
+</head>
+  <link rel="stylesheet" type="text/css" href="./test.css"/>
+ <script type="text/javascript"src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript"src="js.js"></script>
+
+<script> $(document).ready(function(){
+	
+    $.ajax("https://api.apify.com/v2/key-value-stores/QubTry45OOCkTyohU/records/LATEST?fbclid=IwAR2Tw26yqGaR2QE4sB1qhn8xCvrsI9LH1VIv87BM9dvYUbloUo4YtKrMrGw")
+    .done((data)=>{
+    console.log(data);
+    const res = data.phim.phimbo;
+    res.forEach((item, key) => {
+    	$("#ten").append(" <img class='anh' src= '"+item.imageUrl + "'/>");
+    	$("#ten").append("<p class='ten' "+item.title +"</p>");
+    	
+    });
+
+    });
+});
+</script>
+<body >
+<div id="ten">
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>

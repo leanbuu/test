@@ -9,9 +9,11 @@ div{
 
 header{
 	width: 100%;
-	height: 80px;
 	background-color:#092538;
+	position: relative;
 }
+
+
 
 #menu li{
 	font-family:Verdana;
@@ -185,10 +187,10 @@ form{
 	position: relative;
 	width: 180px;
 	height: 350px;
-	left:5%;
 	transition: 0.3s;
 	float: left;
 	margin: 10px;
+	padding-left: 50px;
 }
 
 .phimkhac{
@@ -209,6 +211,7 @@ form{
 	position: relative;
 	text-decoration:none;
 }
+
 
 .tenphim:hover p:last-child{
 	transition: 0.3s;
@@ -261,12 +264,16 @@ main{
 	position: relative;
 	min-height: 300px;
 	float: left;
+	overflow: hidden;
 }
 
 .content p{
     float:left;
 	overflow: hidden;
 	margin: 5px 0 0 0;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
 }
 
 .content i{
@@ -429,11 +436,258 @@ label{
 	color:  #FFA500;
 	font-weight: bold;
 	font-size: 15px;
+	
+}
+
+.dangnhap a:last-child {
+	margin-left: 440px;
 }
 
 
+#xemne iframe{
+	width: 100% !important;
+	height: 100% !important;
 
+}
+.mo-menu{
+	padding:20px 20px;
+	position: absolute;
+	top: 15px;
+	left: 5px;
+	color: #000;
+	background: none !important;
+	border:0px;
+	z-index: 99999;
+}
+.mo-menu i{
+	color: #fff;
+	font-size: 24px;
+}
 
+.main-film{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.phimn{
+	display: flex;
+	flex: 1 0 15%;
+	margin: 3px;
+}
+div#menu {
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		background-color: #092538;
+	}
+
+.tenphim {
+	display: flex;
+	flex-direction: column;
+	flex: 0 30%;
+}
+
+@media (max-width: 575.98px) {
+	div#menu {
+		height: 0px;
+		overflow: hidden;
+	}
+	div#menu ul{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	div#menu li.link{
+		width: 100% !important;
+		display: flex;
+		flex-grow: 1;
+	}
+    
+    div.main-film{
+    	width: 100% !important;
+    }
+
+div.liphimnoibat{
+	display: none;
+}
+
+}
+
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+div#menu {
+		height: 0px;
+		overflow: hidden;
+	}
+	div#menu ul{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	div#mene li.link{
+		width: 100% !important;
+		display: flex;
+		flex-grow: 1;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	div.liphimnoibat{
+		display: none;
+	}
+	h2.tieude{
+		display: none;
+	}
+	div.main-film{
+		width: 100% !important;
+	}
+
+}
+
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+	div.liphimnoibat{
+		display: none;
+	}
+	h2.tieude{
+		display: none;
+	}
+	div.main-film{
+		width: 100% !important;
+	}
+
+}
+
+@media (min-width: 1200px) {
+	
+}
+
+#nen{
+	font-family: Verdana;
+ 	background-color:#092538;
+ 	color: #A0A0A0;
+ 	display: block;
+ 	float: left;
+ 	transition: 0.3s;
+ 	padding:20px 30px;
+ 	margin-top: 10px;
+ 	border-radius: 30px;
+ 	font-weight: bold;
+ 	font-size: 15px;
+ 	margin-left: 200px;
+ 	text-align-last: center;
+}
+
+#nen:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+#thanchitiet{
+	width: 100%;
+	height: auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+}
+
+#anhchitiet{
+	width: 340px;
+	height: 510px;
+	margin-left: 90px;
+	float: left;
+}
+
+#anhchitiet img{
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+.tenchitiet{
+	float: left;
+    font-family: Nunito,sans-serif;
+    font-size: 68px;
+    line-height: 60px;
+    font-weight: 800;
+    color: #fff;
+    margin-left: 70px;
+
+}
+.infochitiet {
+	width: 60%;
+	float: left;	
+	margin-left: 70px;
+    margin-top: 40px;
+}
+.infochitiet i{
+	float: left;
+   font-size: 20px !important;
+}
+.infochitiet a{
+	float: left; 
+	display: inline-block;
+    color: #cad3da;
+    text-decoration: underline;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+#xemphim{
+	float: left;
+	width: 120px;
+	height: 60px;
+	border-radius: 5px;
+    background-color: #e46466;
+    margin-top: 25px;
+    margin-left: 70px;
+}
+#xemphim a{
+	color: #fff !important;
+	text-decoration:none;
+	text-align-last: center;
+	cursor: pointer;
+	display: inline-block;
+    padding: 19px 27px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+iframe{
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+h4{
+	font-size: 18px;
+	color: #9cabb6;
+	font-family: Nunito,sans-serif;
+}
+
+.chontap{
+	width: 40px;
+	height: 35px;
+	background-color: #3898ec;
+	border-radius: 16px;
+	text-decoration:none;
+	list-style: none;
+	float: left;
+	margin-left: 6px;
+}
+.chontap a{
+	text-decoration:none !important;
+}
+
+.chontap li{
+	padding-top: 8px;
+	color: #fff;
+	font-size: 16px;
+	font-family: Nunito,sans-serif;	
+	font-weight: bold;
+	text-align: center;
+}
 
 
 
